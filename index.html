@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" name="viewport">
+  <title>VM Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class= "navbar__brand navbar-brand" href="#"><img src="images/logo1.png" height="90"></a>
+         </div>
+    </div>
+  </nav>
+
+  <header>
+    <h2 class="text-center main-title">Survey Form</h2>
+  </header>
+
+  <div class="container">
+
+    <!-- Form Section-->
+   <div id="form" class="form container-fluid">
+     <div class="row jumbotron">
+       <div class="col-lg-12">
+         <div class="form__container">
+
+           <form action="index.html" method="post">
+             <fieldset>
+               <p class="text-center">Let us know how we can improve freeCodeCamp</p>
+               <div class="form__col">
+                 <div class="form__item">
+                   <label for="name" class="form__item__box form__item__margin">* Name</label>
+                   <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                 </div>
+                 <div class="form__item">
+                   <label for="email" class="form__item__box form__item__margin">* Email</label>
+                   <input type="text" id="email" name="user_email" placeholder="Enter your email" required>
+                 </div>
+                 <div class="form__item">
+                   <label for="age" class="form__item__box form__item__margin">* Age</label>
+                   <input type="text" id="age" name="age" placeholder="Age">
+                 </div>
+
+                 <div class="form__item">
+                   <label class="form__item__box form__item__margin">Which option best describes your current role?</label>
+                   <select name="drop-down" id="drop-down">
+                     <option value="" disabled selected>Select an option</option>
+                     <option value="Student" selected>Student</option>
+                     <option value="Full Time Job">Full Time Job</option>
+                     <option value="Full Time Learner">Full Time Learner</option>
+                     <option value="Prefer not to say">Prefer not to say</option>
+                     <option value="Other">Other</option>
+                   </select>
+                 </div>
+
+                 <div>
+                   <label class="form__item__box form__item__margin">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    <div class="form__input-box">
+                      <div>
+                        <input type="radio" id="definitely" name="recommendation" placeholder="Definitely">
+                        <label for="definitely">Definitely</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="maybe" name="recommendation" placeholder="Maybe">
+                        <label for="maybe">Maybe</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="not-sure" name="recommendation" placeholder="Not sure">
+                        <label for="not-sure">Not sure</label>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="form__item  form__margin2 mb-0">
+                      <label class="form__item__box form__item__margin">What do you like most in FCC?</label>
+                      <select name="drop-down" id="drop-down">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open Source">Open Source</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label class="form__item__box form__item__margin">Things that should be improved in the future (Check all that apply):</label>
+                    <div class="form__input-box2">
+                      <div>
+                        <input type="checkbox" id="front-end-projects" class="right" name="improvement" placeholder="Front-end Projects">
+                        <label for="front-end-projects">Front-end Projects</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="backs-end-projects" class="right" name="improvement" placeholder="Back-end Projects">
+                        <label for="back-end-projects">Back-end Projects</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="data-visualisation" class="right" name="improvement" placeholder="Data Visualisation">
+                        <label for="data-visualisation">Data Visualisation</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="challenges" class="right" name="improvement" placeholder="Challenges">
+                        <label for="challenges">Challenges</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="open-source-community" class="right" name="improvement" placeholder="Open Source Community">
+                        <label for="open-source-community">Open Source Community</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="gitter-help-rooms" class="right" name="improvement" placeholder="Gitter Help Rooms">
+                        <label for="gitter-help-rooms">Gitter Help Rooms</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="videos" class="right" name="improvement" placeholder="Videos">
+                        <label for="videos">Videos</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="city-meetups" class="right" name="improvement" placeholder="City Meetups">
+                        <label for="city-meetups">City Meetups</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="wiki" class="right" name="improvement" placeholder="Wiki">
+                        <label for="wiki">Wiki</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="forum" class="right" name="improvement" placeholder="Forum">
+                        <label for="forum">Forum</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="additional-courses" class="right" name="improvement" placeholder="Additional Courses">
+                        <label for="additional-courses">Additional Courses</label>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="form__margin3">
+                      <label class="form__item__box form__item__margin">Any Comments or Suggestions?</label>
+                    <div>
+                      <textarea id="comment" rows="8" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                  </div>
+                    <button type="submit" class="default">Submit</button>
+                 </div>
+             </fieldset>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div> <!--End Form Section-->
+  </div>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

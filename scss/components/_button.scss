@@ -1,0 +1,12 @@
+button {
+@extend %btn;
+  @include mq("medium") {
+    @include pos($pos: absolute, $top: 99%);
+  }
+}
+
+
+.default {
+    border-radius: $br--default;
+    font-size: em(20px);
+}

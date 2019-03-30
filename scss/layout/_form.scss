@@ -1,0 +1,93 @@
+.form {
+  @include e(item) {
+    @include flexbox($dir: column);
+    @include mq("medium") {
+      @include flexbox($dir: row);
+      margin-top: em(5px);
+    }
+    @include e(margin) {
+        margin: em(26px) em(20px) 0 0;
+    }
+    @include e(box) {
+      @include mq("medium") {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10%;
+        text-align: right;
+      }
+    }
+  }
+  @include e(input-box) {
+    @include mq("medium") {
+      @include pos($pos: absolute, $top: 32%, $left: 55%);
+    }
+  }
+  @include e(input-box2) {
+    @include mq("medium") {
+      @include pos($pos: absolute, $top: 49%, $left: 55%);
+    }
+  }
+  @include e(margin2) {
+    @include mq("medium") {
+      margin-top: em(60px);
+    }
+  }
+  @include e(margin3) {
+    @include mq("medium") {
+      margin-top: em(300px);
+    }
+  }
+}
+
+form {
+  @include mq("medium") {
+    margin-bottom: em(200px);
+  }
+}
+
+textarea {
+  height: 10em !important;
+  @include mq("medium") {
+    @include pos($pos: absolute, $top: 80%, $left: 55%);
+  }
+}
+
+
+input[type="text"],
+textarea,
+select {
+  @extend %form-input;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    @extend %input-box-style;
+  }
+  @include mq("medium") {
+    width: 40%;
+    margin: em(10px) em(30px);
+  }
+}
+
+select[id="drop-down"] {
+  @include mq("medium") {
+    margin: em(10px) 0 0 em(30px);
+  }
+}
+
+::placeholder {
+  font-weight: $font-weight--light;
+  font-style: italic;
+  padding-right: em(15px);
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 em(4px) em(8px) 0;
+  cursor: pointer;
+  &:checked + label {
+    font-weight: $font-weight--bold;
+    color: $sea-green;
+  }
+}

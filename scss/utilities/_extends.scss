@@ -1,0 +1,88 @@
+// No underline
+
+%no-txt-undln {
+  text-decoration: none;
+}
+
+// Screen reader text
+
+%srt {
+  text-indent: -9999px;
+}
+
+//Headlines
+
+%hdln-prim {
+  font-size: em(30px);
+  font-weight: $font-weight--ultra-bold;
+  color: $dark-grey;
+  letter-spacing: $letter-space;
+}
+
+%hdln-sec {
+  font-size: em(20px);
+  font-weight: $font-weight--ultra-bold;
+  letter-spacing: $letter-space;
+}
+
+
+// Button
+
+%btn {
+  background-color: $sea-green;
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+  width: 100%;
+  height: em(50px);
+  &:focus {
+    opacity: 1;
+  }
+  &:hover {
+    opacity: .8;
+    transition: $trns-duration;
+  }
+}
+
+// Transition
+
+%trn {
+  opacity: .8;
+  transition: $trns-duration;
+}
+
+// Mouseover
+
+%mouseover {
+  cursor: pointer;
+  &:hover {
+    opacity: .5;
+    @extend %trn;
+  }
+  &:focus {
+    opacity: 1;
+  }
+  &:active {
+    opacity: .8;
+  }
+}
+
+
+// Form Input Box
+
+%form-input {
+  height: 3.5em;
+  width: 100%;
+  border-radius: 8px 8px;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  margin: 15px 0px 20px 0;
+}
+
+%input-box-style {
+  outline: none;
+  background-color: $light-yellow;
+  transition: all $trns-duration;
+  border-color: $sea-green;
+}
