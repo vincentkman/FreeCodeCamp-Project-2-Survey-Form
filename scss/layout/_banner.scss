@@ -1,0 +1,19 @@
+.banner {
+  background: url(../images/cloud.jpg) repeat 0 0;
+  width: 100%;
+  height: em(200px);
+  margin: auto;
+  margin-bottom: em(100px);
+
+  p {
+    background-color: $black;
+    color: $white;
+    @include pos($pos: relative, $top: em(120px), $left: em(20px));
+    width: em(400px);
+    padding: em(20px);
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    letter-spacing: em(20px);
+  }
+}
