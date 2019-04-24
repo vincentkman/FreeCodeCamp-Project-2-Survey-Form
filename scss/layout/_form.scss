@@ -1,4 +1,5 @@
 .form {
+  padding-top: em(250px);
   @include e(item) {
     @include flexbox($dir: column);
     @include mq("medium") {
@@ -46,7 +47,7 @@ form {
 }
 
 textarea {
-  height: 10em !important;
+  height: em(160px) !important;
   @include mq("medium") {
     @include pos($pos: absolute, $top: 80%, $left: 55%);
   }

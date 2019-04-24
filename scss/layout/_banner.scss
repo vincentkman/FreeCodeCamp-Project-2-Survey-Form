@@ -1,9 +1,8 @@
 .banner {
   background: url(../images/cloud.jpg) repeat 0 0;
-  width: 100%;
-  height: em(200px);
+  @include dim($w: 100%, $h: em(200px));
   margin: auto;
-  margin-bottom: em(100px);
+  z-index: 1;
 
   p {
     background-color: $black;
